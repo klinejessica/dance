@@ -1,9 +1,11 @@
 
 .card {
-    display: grid;
+    display: flex;
     height: 300px;
     width: 300px;
-    place-items: center;
+    align-items: center;
+    text-align: center;
+   justify-content: center;
     
 }
 
