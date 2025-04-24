@@ -1,16 +1,28 @@
 
 .card {
     display: flex;
-    height: 300px;
-    width: 300px;
+    height: 600px;
+    width: 600px;
     align-items: center;
     text-align: center;
-   justify-content: center;
+    justify-content: center;
     
 }
 
-.title {
+mat-card-title {
     color: white;
-    font-size:xx-large;
-    align-items: bottom;
+    font-size:86px;
+}
+
+mat-card-subtitle {
+    font-size: x-large;
+    margin-top: 50px;
+}
+
+button {
+    height:80px;
+    width: 200px;
+    font-size: xx-large;
+    margin-top: 50px;
+    
 }
