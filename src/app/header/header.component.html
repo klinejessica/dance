@@ -1,20 +1,26 @@
-<button mat-button [matMenuTriggerFor]="belowMenu">About</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
+<header>
+<a class="logo" href="#">Studio</a>
+</header>
+
+<div class="menu">
+<button class="menu-item" mat-button [matMenuTriggerFor]="aboutMenu">About</button>
+<mat-menu #aboutMenu="matMenu" yPosition="below">
   <button mat-menu-item>Instructors</button>
   <button mat-menu-item>Studio</button>
 </mat-menu>
-<button mat-button [matMenuTriggerFor]="classMenu">Classes</button>
+<button class="menu-item" mat-button [matMenuTriggerFor]="classMenu">Classes</button>
 <mat-menu #classMenu="matMenu" yPosition="below">
   <button mat-menu-item routerLink="/dance" routerLinkActive="active">Dance Styles</button>
   <button mat-menu-item>Schedule</button>
 </mat-menu>
-<button mat-button [matMenuTriggerFor]="eventsMenu">Events</button>
+<button class="menu-item" mat-button [matMenuTriggerFor]="eventsMenu">Events</button>
 <mat-menu #eventsMenu="matMenu" yPosition="below">
   <button mat-menu-item>Socials</button>
   <button mat-menu-item>Events</button>
 </mat-menu>
-<button mat-button [matMenuTriggerFor]="contactMenu">Contact</button>
+<button class="menu-item" mat-button [matMenuTriggerFor]="contactMenu">Contact</button>
 <mat-menu #contactMenu="matMenu" yPosition="below">
   <button mat-menu-item>FAQs</button>
   <button mat-menu-item>Get More Info</button>
 </mat-menu>
+</div>
