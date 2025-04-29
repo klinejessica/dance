@@ -1,0 +1,18 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+}
+
+.example-card{
+    color: white;
+}
+
+// .header{
+//     display: grid;
+//     align-self: center;
+// }
