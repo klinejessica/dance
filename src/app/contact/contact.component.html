@@ -1,9 +1,15 @@
 <h1>Contact Us!</h1>
-
+<div class="contactinfo">
+  <h1>Dance Studio</h1>
+  <h3>Parque Del Río</h3>
+  <h3>Medellín, Antioquia, Colombia</h3>
+  <h3>+57 999 999 9999</h3>
+</div>
 
 <google-map [center] = "center" >
  <map-marker *ngFor="let position of markerLatLong" [position]="position"></map-marker>
 </google-map>
+<div class="form">
 <mat-form-field>
     <mat-label>Name</mat-label>
     <input matInput>
@@ -19,3 +25,4 @@
     <mat-label>Message</mat-label>
     <textarea matInput></textarea>
   </mat-form-field>
+</div>
