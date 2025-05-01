@@ -1,4 +1,9 @@
 <h1>Contact Us!</h1>
+
+
+<google-map [center] = "center" >
+ <map-marker *ngFor="let position of markerLatLong" [position]="position"></map-marker>
+</google-map>
 <mat-form-field>
     <mat-label>Name</mat-label>
     <input matInput>
