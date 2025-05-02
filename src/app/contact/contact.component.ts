@@ -6,10 +6,11 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { NgForOf } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-contact',
-  imports: [MatSelectModule, MatFormFieldModule, MatInputModule, GoogleMapsModule,NgForOf],
+  imports: [MatSelectModule, MatFormFieldModule, MatButtonModule, MatInputModule, GoogleMapsModule,NgForOf],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
