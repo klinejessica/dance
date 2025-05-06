@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
+import { environment } from '../environments/environment';
 
 @Component({
     selector: 'app-root',
@@ -11,4 +12,10 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'dance';
+
+  ngOnInit() {
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.googleMapsApiKey}`;
+    document.head.appendChild(script);
+  }
 }
