@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FaqsComponent } from './faq/faq.component';
 import { InstructorsComponent } from './instructors/instructors.component';
+import { StudioComponent } from './studio/studio.component';
 
 export const routes: Routes = [
     { path: "dance", component: DanceComponent },
@@ -11,5 +12,6 @@ export const routes: Routes = [
     { path: "dance", component: DanceComponent },
     { path: "contact", component: ContactComponent},
     { path: "faq", component: FaqsComponent},
-    { path: "instructors", component: InstructorsComponent}
+    { path: "instructors", component: InstructorsComponent},
+    { path: "studio", component: StudioComponent}
 ];

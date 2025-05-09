@@ -6,7 +6,7 @@
 <button class="menu-item" mat-button [matMenuTriggerFor]="aboutMenu">About</button>
 <mat-menu #aboutMenu="matMenu" yPosition="below">
   <button mat-menu-item routerLink="/instructors"  routerLinkActive="active">Instructors</button>
-  <button mat-menu-item>Studio</button>
+  <button mat-menu-item routerLink="/studio"  routerLinkActive="active">Studio</button>
 </mat-menu>
 <button class="menu-item" mat-button [matMenuTriggerFor]="classMenu">Classes</button>
 <mat-menu #classMenu="matMenu" yPosition="below">
