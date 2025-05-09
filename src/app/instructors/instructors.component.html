@@ -1,1 +1,27 @@
-<p>instructors works!</p>
+    <h1>Meet Our Instructors</h1>
+    <mat-grid-list cols="4" rowHeight="600px">
+        @for(profe of instructors; track profe.id){
+        <mat-grid-tile class="intructor-title">
+            <mat-card class="instructor-card" appearance="outlined">
+                <mat-card-header>
+                    <mat-card-title>{{profe.name}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                    alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt qui inventore, numquam placeat
+                        veritatis fugiat illo nesciunt voluptas doloribus laborum ut reiciendis mollitia, officia hic
+                        odio
+                        vero debitis, rem perspiciatis?</p>
+                </mat-card-content>
+                <mat-card-footer class="example-card-footer">
+                    <mat-chip-set aria-label="Chihuahua traits">
+                         @for(style of profe.styles; track style){ 
+                        <mat-chip>{{style}}</mat-chip>
+                        } 
+                    </mat-chip-set>
+                </mat-card-footer>
+            </mat-card>
+        </mat-grid-tile>
+        }
+    </mat-grid-list>
