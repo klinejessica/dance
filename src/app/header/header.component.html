@@ -15,7 +15,7 @@
 </mat-menu>
 <button class="menu-item" mat-button [matMenuTriggerFor]="eventsMenu">Events</button>
 <mat-menu #eventsMenu="matMenu" yPosition="below">
-  <button mat-menu-item>Socials</button>
+  <button mat-menu-item routerLink="/socials" routerLinkActive="active">Socials</button>
   <button mat-menu-item>Events</button>
 </mat-menu>
 <button class="menu-item" mat-button [matMenuTriggerFor]="contactMenu">Contact</button>

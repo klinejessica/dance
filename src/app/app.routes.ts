@@ -5,6 +5,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { FaqsComponent } from './faq/faq.component';
 import { InstructorsComponent } from './instructors/instructors.component';
 import { StudioComponent } from './studio/studio.component';
+import { SocialComponent } from './social/social.component';
 
 export const routes: Routes = [
     { path: "dance", component: DanceComponent },
@@ -13,5 +14,6 @@ export const routes: Routes = [
     { path: "contact", component: ContactComponent},
     { path: "faq", component: FaqsComponent},
     { path: "instructors", component: InstructorsComponent},
-    { path: "studio", component: StudioComponent}
+    { path: "studio", component: StudioComponent},
+    { path: "socials", component: SocialComponent}
 ];
