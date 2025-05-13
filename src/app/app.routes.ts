@@ -6,6 +6,7 @@ import { FaqsComponent } from './faq/faq.component';
 import { InstructorsComponent } from './instructors/instructors.component';
 import { StudioComponent } from './studio/studio.component';
 import { SocialComponent } from './social/social.component';
+import { EventsComponent } from './events/events.component';
 
 export const routes: Routes = [
     { path: "dance", component: DanceComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: "faq", component: FaqsComponent},
     { path: "instructors", component: InstructorsComponent},
     { path: "studio", component: StudioComponent},
-    { path: "socials", component: SocialComponent}
+    { path: "socials", component: SocialComponent},
+    {path: "events", component: EventsComponent}
 ];
