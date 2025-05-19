@@ -14,8 +14,10 @@ export class AppComponent {
   title = 'dance';
 
   ngOnInit() {
+    if(typeof document !== 'undefined'){
     const script = document.createElement('script');
     script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.googleMapsApiKey}`;
     document.head.appendChild(script);
+    }
   }
 }

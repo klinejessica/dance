@@ -31,4 +31,12 @@ button {
 
 }
 
-
+:root {
+  @include mat.button-overrides((
+    text-label-text-color: white,
+    // filled-label-text-color:blue,
+    // filled-container-color:blue,
+    // filled-state-layer-color:blue,
+    text-ripple-color:#023fd3
+  ));
+}
