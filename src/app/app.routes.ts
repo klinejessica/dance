@@ -10,7 +10,7 @@ import { SocialComponent } from './social/social.component';
 import { EventsComponent } from './events/events.component';
 
 export const routes: Routes = [
-    {  path: '/', component: HomeComponent}
+    {  path: '', component: HomeComponent},
     { path: "dance", component: DanceComponent },
     { path: "schedule", component: ScheduleComponent },
     { path: "dance", component: DanceComponent },
