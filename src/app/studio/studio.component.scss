@@ -1,0 +1,43 @@
+.header{
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.studio-table {
+    border-radius: 1em;
+    overflow: hidden !important;
+}
+
+.mat-mdc-header-cell {
+    font-size: large;
+    font-weight: 400;
+}
+
+.mat-column-id {
+    width: 32px;
+}
+
+.mat-column-name {
+    width: 100px;
+}
+.mat-column-location {
+    width: 100px;
+}
+.mat-column-ig {
+    width: 100px;
+}
+.mat-column-website {
+    width: 100px;
+}
+
+tr.studio-row:hover {
+  background: whitesmoke;
+  color: black;
+}

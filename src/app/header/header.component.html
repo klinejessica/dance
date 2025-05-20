@@ -1,0 +1,26 @@
+<header>
+<a class="logo" href="#">Studio</a>
+</header>
+
+<div class="menu">
+<button class="menu-item" mat-button [matMenuTriggerFor]="aboutMenu">About</button>
+<mat-menu #aboutMenu="matMenu" yPosition="below">
+  <button mat-menu-item routerLink="/instructors"  routerLinkActive="active">Instructors</button>
+  <button mat-menu-item routerLink="/studio"  routerLinkActive="active">Studio</button>
+</mat-menu>
+<button class="menu-item" mat-button [matMenuTriggerFor]="classMenu">Classes</button>
+<mat-menu #classMenu="matMenu" yPosition="below">
+  <button mat-menu-item routerLink="/dance" routerLinkActive="active">Dance Styles</button>
+  <button mat-menu-item routerLink="/schedule" routerLinkActive="active">Schedule</button>
+</mat-menu>
+<button class="menu-item" mat-button [matMenuTriggerFor]="eventsMenu">Events</button>
+<mat-menu #eventsMenu="matMenu" yPosition="below">
+  <button mat-menu-item routerLink="/socials" routerLinkActive="active">Socials</button>
+  <button mat-menu-item routerLink="/events" routerLinkActive="active">Events</button>
+</mat-menu>
+<button class="menu-item" mat-button [matMenuTriggerFor]="contactMenu">Contact</button>
+<mat-menu #contactMenu="matMenu" yPosition="below">
+  <button mat-menu-item routerLink="/faq"  routerLinkActive="active">FAQ</button>
+  <button mat-menu-item routerLink="/contact"  routerLinkActive="active">Get More Info</button>
+</mat-menu>
+</div>

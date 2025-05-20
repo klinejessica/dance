@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use './theme-colors' as my-theme;
+
+
+html, body { height: 100%; background-color: #bbe7fa;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+    
+ }
+
+button {
+    height:80px;
+    width: 200px;
+    font-size: xx-large;
+    margin-top: 50px;
+
+
+}
+
+:root {
+    @include mat.card-overrides((
+      subtitle-text-color: black,
+      elevated-container-color: white,
+    ));
+
+}
+
+:root {
+  @include mat.button-overrides((
+    text-label-text-color: white,
+    text-ripple-color:#023fd3
+  ));
+}

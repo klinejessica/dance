@@ -1,0 +1,33 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.class-card{
+    color: white;
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    width:max-content;
+    height: 185px;
+}
+.header{
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.col {
+    justify-items: center;
+}
+
+mat-card-content {
+   text-align:center;
+}
+
+mat-card-actions{
+    align-items: flex-end;   
+}

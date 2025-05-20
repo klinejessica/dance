@@ -1,0 +1,16 @@
+<div class="header">
+  <h1>Frequently Asked Questions</h1>
+</div>
+<div class="container">
+  <mat-accordion>
+    @for(quest of questions; track quest.id){
+    <mat-expansion-panel ngFor="let quest of questions" hideToggle class="dropdown">
+      <mat-expansion-panel-header>
+        <mat-panel-title>{{quest.q}}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{quest.a}}</p>
+    </mat-expansion-panel>
+    }
+
+  </mat-accordion>
+</div>
