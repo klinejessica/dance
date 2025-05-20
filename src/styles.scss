@@ -2,13 +2,7 @@
 @use '@angular/material' as mat;
 @use './theme-colors' as my-theme;
 
-html {
-   //color-scheme: light;
-//    @include mat.theme((
-//     primary: my-theme.$primary-palette,
-//     tertiary: my-theme.$tertiary-palette,
-//    ));
-}
+
 html, body { height: 100%; background-color: #bbe7fa;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
     
@@ -34,9 +28,6 @@ button {
 :root {
   @include mat.button-overrides((
     text-label-text-color: white,
-    // filled-label-text-color:blue,
-    // filled-container-color:blue,
-    // filled-state-layer-color:blue,
     text-ripple-color:#023fd3
   ));
 }
