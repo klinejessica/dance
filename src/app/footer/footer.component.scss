@@ -1,0 +1,32 @@
+.footer {
+    background-color: aliceblue;
+    padding: 5rem;
+    
+}
+
+ #links {
+    display: flex;
+    justify-content: space-between;
+   list-style: none;
+}
+
+.copyright{
+    padding-top: 2rem;
+    display: grid;;
+    justify-items: center;
+}
+
+a:link {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    font-style: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.copyright {
+    margin: 1.5rem;
+}
